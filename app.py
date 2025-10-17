@@ -1,6 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 import time
+import os
 
 # Inicialize o cliente OpenAI com sua chave de API
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -105,3 +106,4 @@ else:
         st.info("Clique em 'Processar Arquivos' para começar.")
     else:
         st.info("Faça upload dos arquivos PDF para começar.")
+
